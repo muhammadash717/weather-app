@@ -94,6 +94,7 @@ h1 {
 #suggestionsList li {
   padding: 10px;
   cursor: pointer;
+  color: black;
 }
 
 #suggestionsList li:hover {
@@ -109,6 +110,10 @@ body.dark {
 body.dark .container {
   background: #2c2c2c;
   color: #eee;
+}
+
+body.dark .container h1 {
+  color: #19cdff;
 }
 
 body.dark .inputField {
