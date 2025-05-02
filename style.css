@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #19cdff, #0057c0);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 400px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #0072ff;
+}
+
+.searchContainer {
+  justify-content: center;
+  margin-bottom: 20px;
+  margin: 20px 0;
+  position: relative;
+
+}
+
+.inputField {
+  padding: 10px;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.searchBtn {
+  padding: 10px 20px;
+  background: #19cdff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.searchBtn:hover {
+  background: #0057c0;
+}
+
+#weatherContainer {
+  display: none;
+  margin-top: 20px;
+}
+
+#weatherContainer h2 {
+  margin-bottom: 10px;
+  color: #0072ff;
+}
+
+#weatherContainer p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+#errorMessage {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#suggestionsList {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin-top: 5px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-height: 500px;
+  overflow-y: auto;
+  position: absolute;
+  width: 80%;
+  z-index: 100;
+}
+
+#suggestionsList li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+#suggestionsList li:hover {
+  background: #f0f0f0;
+}
+
+/* Dark Theme */
+body.dark {
+  background: linear-gradient(to right, #1d1e1e, #707275);
+  color: #eee;
+}
+
+body.dark .container {
+  background: #2c2c2c;
+  color: #eee;
+}
+
+body.dark .inputField {
+  background: #444;
+  color: #fff;
+  border-color: #666;
+}
+
+body.dark .searchBtn {
+  color: black;
+}
